@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="src/index.css" />
+        <title>MOMENTUM</title>
+    </head>
+    <body>
+        <div class="js-clock">
+            <h1>00:00</h1>
+            <span class="js-weather weather"></span>
+        </div>
+        <form class="js-form form">
+            <input type="text" placeholder="What's your name?" />
+        </form>
+        <h4 class="js-greetings greetings"></h4>
+        <form class="js-tasksForm taskForm">
+            <input type="text" placeholder="What's new task?" />
+        </form>
+        <div class="js-taskList taskList">
+            <div class="pending__column task__column">
+                <h3>Pending</h3>
+                <ul></ul>
+            </div>
+            <div class="finished__column task__column">
+                <h3>Finished</h3>
+                <ul></ul>
+            </div>
+        </div>
+        <script src="js/clock.js"></script>
+        <script src="js/greetings.js"></script>
+        <script src="js/tasks.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/weather.js"></script>
+    </body>
+</html>

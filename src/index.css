@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap");
+@import "reset.css";
+
+body,
+html {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    font-family: "Nunito", sans-serif;
+}
+
+html {
+    background-color: #2c3e50;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    all: unset;
+}
+
+.form,
+.greetings,
+.taskList {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+.bgImage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.3s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 200px;
+    font-weight: 900;
+    transition: color 0.5s ease-in-out;
+}
+
+h4 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.form {
+    margin-top: 15px;
+}
+
+input {
+    background: none;
+    border: 0;
+    font-size: 30px;
+    color: white;
+    border-bottom: 3px solid white;
+    padding-bottom: 6px;
+    outline: none;
+}
+
+::placeholder {
+    color: rgb(223, 223, 223);
+    text-align: center;
+}
+
+.form,
+.taskForm,
+h4 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.taskList {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.task__column {
+    text-align: center;
+}
+
+li {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+ul {
+    text-align: end;
+}
+
+.weather {
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    top: -20px;
+}
+
+.js-clock {
+    position: relative;
+}
